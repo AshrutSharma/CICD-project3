@@ -1,0 +1,6 @@
+# Ignore all compiled Java class files
+*.class
+/bin/
+/build/
+.gradle/
+
