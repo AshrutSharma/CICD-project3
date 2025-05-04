@@ -2,14 +2,7 @@ pipeline {
     agent any
 
     environment {
-        // Optional: Set environment variables if needed
         GRADLE_OPTS = "-Dorg.gradle.daemon=false"
-    }
-
-    tools {
-        // Use Jenkins-installed JDK and Gradle (or use wrapper)
-        jdk 'Java 17'       // Adjust to your Jenkins JDK name
-        gradle 'Gradle 8'   // Or use gradlew wrapper
     }
 
     stages {
@@ -40,6 +33,7 @@ pipeline {
                 sh './gradlew test'
             }
         }
+
     }
 
     post {
