@@ -9,6 +9,10 @@ public class UserService {
         return "Goodbye from feature/add-goodbye";
     }
 
+    public String sayWelcome() {
+        return "Welcome from feature/add-welcome";
+    }
+
     public String sayHello() {
         return "Hello from feature/add-hello";
     }
