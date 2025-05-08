@@ -9,4 +9,7 @@ public class UserService {
         return "Hello from feature/add-hello";
     }
     
+    public String sayBye() {
+        return "bye from feature/add-hello";
+    }
 }
